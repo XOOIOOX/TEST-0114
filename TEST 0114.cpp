@@ -1,12 +1,12 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <shared_mutex>
 
-#define numWriters		100
-#define numReaders		10
-#define writeDelayMs	400
-#define readDelayMs		100
-#define repeatWhole		10
+constexpr auto numWriters{ 100 };
+constexpr auto numReaders{ 10 };
+constexpr auto writeDelayMs{ 400 };
+constexpr auto readDelayMs{ 100 };
+constexpr auto repeatWhole{ 10 };
 
 using VectorInt = std::vector<int>;
 using Thread = std::thread;
